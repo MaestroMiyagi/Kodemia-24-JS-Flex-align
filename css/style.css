@@ -1,7 +1,12 @@
-body {
+body, .text {
   display: flex;
   align-items: center;
   justify-content: center;
+    
+}
+
+.text{
+    font-size: x-large;
 }
 .container {
   border: 1rem solid #000;
@@ -37,4 +42,4 @@ body {
     border-style: solid;
     border-width: 2px;
     position: relative;
-  }
+}
