@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  border: 1rem solid #000;
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.figure-a {
+  width: 100px;
+  height: 100px;
+  background-color: #ff0000;
+  border-color: #ff0000;
+  border-style: solid;
+  border-width: 2px;
+  position: relative;
+}
+.figure-b {
+  width: 100px;
+  height: 70px;
+  background-color: #00ff00;
+  border-color: #00ff00;
+  border-style: solid;
+  border-width: 2px;
+  position: relative;
+}
+.figure-c {
+    width: 100px;
+    height: 130px;
+    background-color: #0000ff;
+    border-color: #0000ff;
+    border-style: solid;
+    border-width: 2px;
+    position: relative;
+  }
