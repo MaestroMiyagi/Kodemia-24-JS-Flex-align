@@ -1,22 +1,16 @@
-body, .text {
+body{
   display: flex;
   align-items: center;
   justify-content: center;
     
 }
 
-.text{
-    font-size: x-large;
-}
-.text::after{
-    animation: movement 2s cubic-bezier(0,0,0.1,0.1) infinite;
-    content: 'Hola';
-}
 .container {
   border: 1rem solid #000;
   width: 50vw;
   height: 50vh;
   display: flex;
+  animation: movement 3s cubic-bezier(0,0,0.1,0.1) infinite;
 }
 .figure-a {
   width: 100px;
@@ -47,18 +41,26 @@ body, .text {
 }
 
 @keyframes movement{
-    0% {
-        color: #ff0000;
-        align-items: flex-end;
+    10% {
+        align-items: flex-start;
+        justify-content:flex-start;
+    }
+    20% {
+        align-items: flex-start;
         justify-content: center;
     }
-
-    50% {
-        color: #0000ff;
+    30% {
+        align-items: stretch;
+        justify-content: center;
     }
-
     100% {
-        color: #00ff00;
+        align-items: flex-start;
+        justify-content: flex-end;
     }
-
 }
+
+align-items: center; /* Pack items around the center */
+ /* Pack items from the start */
+align-items: end; /* Pack items from the end */
+align-items: flex-start; /* Pack flex items from the start */
+ /* Pack flex items from the end */
