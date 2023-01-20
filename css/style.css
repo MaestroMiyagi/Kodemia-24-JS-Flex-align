@@ -17,8 +17,6 @@ body, .text {
   width: 50vw;
   height: 50vh;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
 }
 .figure-a {
   width: 100px;
@@ -51,6 +49,8 @@ body, .text {
 @keyframes movement{
     0% {
         color: #ff0000;
+        align-items: flex-end;
+        justify-content: center;
     }
 
     50% {
