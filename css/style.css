@@ -10,7 +10,11 @@ body{
   width: 50vw;
   height: 50vh;
   display: flex;
-  animation: movement 3s cubic-bezier(0,0,0.1,0.1) infinite;
+  animation: movement 6s linear infinite;
+}
+.margin{
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .figure-a {
   width: 100px;
@@ -50,17 +54,35 @@ body{
         justify-content: center;
     }
     30% {
-        align-items: stretch;
-        justify-content: center;
-    }
-    100% {
         align-items: flex-start;
         justify-content: flex-end;
     }
+    40% {
+        align-items: center;
+        justify-content:flex-start;
+    }
+    50% {
+        align-items: center;
+        justify-content: center;
+    }
+    60% {
+        align-items: center;
+        justify-content: flex-end;
+    }
+    70% {
+        align-items: flex-end;
+        justify-content:flex-start;
+    }
+    80% {
+        align-items: flex-end;
+        justify-content: center;
+    }
+    90% {
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    100% {
+        align-items: stretch;
+        justify-content: stretch;
+    }
 }
-
-align-items: center; /* Pack items around the center */
- /* Pack items from the start */
-align-items: end; /* Pack items from the end */
-align-items: flex-start; /* Pack flex items from the start */
- /* Pack flex items from the end */
